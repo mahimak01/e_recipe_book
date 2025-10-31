@@ -1,0 +1,47 @@
+body {
+    background: #fff8f3;
+}
+.center-content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.admin-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, .08);
+    padding:30px 50px 50px 50px;
+    max-width:500px;
+    width: 100%;
+}
+.admin-logo {
+    width: 64px;
+}
+.eye-btn {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    color: #bbb;
+    cursor: pointer;
+}
+.error-message {
+    color: #d0342f;
+    font-size: .92rem;
+    font-weight: 500;
+    padding-top: .3rem;
+}
+.toast {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    background: #26a65b;
+    color: #fff;
+    border-radius: 8px;
+    padding: .6rem 1.2rem;
+    z-index: 1500;
+    box-shadow: 0 2px 16px #adebad60;
+    transition: .2s;
+}

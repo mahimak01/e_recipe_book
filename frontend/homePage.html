@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="homePage.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div>
+    <!--navbar-->
+      <div id="include-header"></div>
+
+    <!--heroImage-->
+    <section id="hero" class="hero">
+      <div class="hero-slideshow " id="hero-slideshow">
+        <img class="slide " src="./Images/dessert/bundle-cakes-marmalades-wooden-platter-abstract-table.jpg" alt="">
+        <img class="slide" src="./Images/vegeterian/assortment-indian-dishes-platter.jpg" alt="">
+        <img class="slide"
+          src="./Images/non-vegetarian/crilled-chicken-bread-piece-greens-pepper-sauce-spices-side-view.jpg" alt="">
+        <img class="slide" src="./Images/juice/variety-colorful-smoothies-with-fresh-ingredients.jpg" alt="">
+        <img class="slide" src="./Images/dessert/from-assorted-baked-with-baklava-baklava-sheki-flowers-smoked-fish.jpg"
+          alt="">
+      </div>
+
+      <div class="hero-overlay rounded-3 " id="heroOverlay">
+        <h2 class="hero-title py-3">Every meal is an opportunity</h2>
+        <p class="hero-sub px-5 ">Discover tried-and-true recipes, curated collections and daily inspiration.Cooking is
+          like love. It should be entered into with abandon or not at all.</p>
+        <div class="hero-cta py-3 search-wrap" style="position:relative;">
+          <button class="btn btn-modern btn-diagonal-wipe text-white" id="exploreBtn"><span>Explore
+              Recipes</span></button>
+          <button class="btn btn-modern btn-glow-outline ms-3 text-white" id="searchBtn">Search</button>
+          <input type="text" id="searchInput" placeholder="Search recipe..." 
+            class="search py-2 px-5 rounded-3 mt-4">
+          <div id="autocomplete" class="autocomplete position-absolute top-100 z-1 rounded-3 bg-white" role="listbox"
+            aria-label="Recipe suggestions" style="position:absolute; left:0; right:0; top:100%; z-index:20;">
+            <ul id="suggestList" class="list-unstyled m-0 p-0 fs-6 text-start text-black"></ul>
+          </div>
+        </div>
+        <div id="noMatchMsg" class="pt-1 text-white "></div>
+
+      </div>
+    </section>
+
+    <!--Menu options-->
+    <div class="options py-4" id="option">
+      <div class="container d-flex justify-content-between">
+        <div id="vegetarian" class="categoryBtn active" data-category="vegetarian">
+          <img src="./Images/gif/salad.gif" alt="veg" class="rounded-circle menuOption"><br>
+          <span class="px-4 fw-semibold text-white fs-5">Vegetarian</span>
+        </div>
+        <div id="non-veg" class="categoryBtn" data-category="non-veg">
+          <img src="./Images/gif/dinner.gif" alt="non-veg" class="rounded-circle menuOption  ms-4"><br>
+          <span class="px-2 fw-semibold text-white fs-5">Non-Vegetarian</span>
+        </div>
+        <div id="healthy" class="categoryBtn " data-category="healthy">
+          <img src="./Images/gif/healthy-meal.gif" alt="healty" class="rounded-circle menuOption ms-4"><br>
+          <span class="px-5 fw-semibold text-white fs-5">Healthy</span>
+        </div>
+        <div id="juice" class="categoryBtn " data-category="juices">
+          <img src="./Images/gif/cold-drink.gif" alt="drinks" class="rounded-circle menuOption ms-3"><br>
+          <span class="px-5 fw-semibold text-white fs-5">Juices</span>
+        </div>
+        <div id="dessert" class="categoryBtn " data-category="dessert">
+          <img src="./Images/gif/pancake.gif" alt="sweet" class="rounded-circle menuOption ms-3 "><br>
+          <span class="px-5 fw-semibold text-white fs-5">Dessert</span>
+        </div>
+      </div>
+    </div>
+
+    <!--Most love recepie-->
+    <div class="mostLove py-5 px-5 text-center " id="mostLove">
+      <div class="container">
+        <h1 class="py-3 mostLoveHeading ">Most Love recipe</h1>
+        <p>Every week we present you with a selection of our personal favorite recipes. Enjoy trying them out!</p>
+        <div class="image-grid recipe-grid" id="mostLovedGrid">
+          <div class="image-row py-2">
+            <div class="image image-01 rounded-3"></div>
+            <div class="image image-02 rounded-3"></div>
+            <div class="image image-03 rounded-3"></div>
+          </div>
+          <div class="image-row">
+            <div class="image image-04 rounded-3"></div>
+            <div class="image image-05 rounded-3"></div>
+          </div>
+        </div>
+        <button class="btn py-2 px-2 mt-5 view-most-love text-white btn-modern btn-diagonal-wipe"
+          id="viewAllFavorites">View all Favorites</button>
+      </div>
+    </div>
+
+    <!--our Best collection-->
+    <div class="best py-5 px-5 text-center " id="bestCollection">
+      <div class="container">
+        <h1 class="py-3 bestCollectionHeading ">Our Best Collection</h1>
+        <p>Every week we present you with a selection of our personal favorite recipes. Enjoy trying them out!</p>
+        <div class="image-grid recipe-grid" id="bestRecipesGrid">
+          <div class="image-row py-2">
+            <div class="image image-01 rounded-3"></div>
+            <div class="image image-02 rounded-3"></div>
+          </div>
+          <div class="image-row">
+            <div class="image image-03 rounded-3"></div>
+            <div class="image image-04 rounded-3"></div>
+            <div class="image image-05 rounded-3"></div>
+          </div>
+        </div>
+        <button class="btn py-2 px-2 mt-5 view text-white view-best-collection btn-modern btn-diagonal-wipe"
+          id="viewBestRecipes">View best recepie</button>
+      </div>
+    </div>
+
+    <!--About us-->
+    <div class="aboutBlog " id="aboutBlog">
+      <div class="container  py-5 d-flex px-5">
+        <div class="about text-start col-sm-6 px-5 " id="about">
+          <h1 class="aboutHeading py-3 ">About All Recipe</h1>
+          <p class=" blog-para">In this modern world everyone depends on internet and mobile phones. Keeping this thing
+            in the mind we designed food recipe android application to assist users to cook like a master. This paper
+            introduces a food recipe app designed to help the users in cooking. This food recipe app aims to improve the
+            cooking skills of user. and quick in comparison to such an application with a locally stored database. In
+            this paper we summarize implementation details and results of the system practice. This system is a proper
+            source for beginner and professionals. Most importantly, we connects home cooks with their greatest sources
+            of inspiration — other home cooks. We're the world's leading digital food brand, and that inspires us to do
+            everything possible to keep our community connected. Sixty-million home cooks deserve no less.</p>
+          <button class="btn py-2 px-2 mt-5 view-most-love text-white btn-modern btn-diagonal-wipe" id="aboutBtn">About
+            Us</button>
+        </div>
+
+        <div class="blog fw-bold col-sm-6 px-5" id="blog">
+          <h1 class="blogHeading py-3 pb-4">latest from the blogs</h1>
+          <div class="d-flex justify-content-end my-3" id="blogOne">
+            <div><img src="./Images/vegeterian/spagetti.jpg" class="blogImage rounded-5" alt=""></div>
+            <div class="px-2">
+              <p class="fw-light fs-6"> July 31, 2025</p>
+              <p class="fs-5"> Instant Pot Spaghetti </p>
+              <p class=" fw-light"> My whole family loves this Instant Pot Spaghetti! Silky, flavorful, a delightfully
+                clingy. Easy enough for my kids to make it too!</p>
+              <h6 class="read fw-semibold continue-btn" id="blogRead1"> Continue Reading </h6>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end my-2" id="blogTwo">
+            <div><img src="./Images/juice/smootheie.webp" class="blogImage rounded-5" alt=""></div>
+            <div class="px-2">
+              <p class=" fw-light fs-6"> July 23, 2025</p>
+              <p class="fs-5">Chocolate Cherry Smoothie</p>
+              <p class=" fw-light">Chocolate Cherry Smoothie every day, please! Packed with protein and so delightfully
+                silky and smooth.</p>
+              <h6 class="read fw-semibold continue-btn" id="blogRead2"> Continue Reading </h6>
+            </div>
+          </div>
+          <button class="btn py-2 px-4 mt-5 view-most-love text-white btn-modern btn-diagonal-wipe "
+            id="moreBtn">More</button>
+        </div>
+      </div>
+    </div>
+
+    <button id="floatingBtn" class="floating-btn">
+      <i class="fa fa-lightbulb icon"></i> 
+      <span class="btn-text">Suggestion</span> 
+    </button>
+
+
+   <div id="include-footer"></div>
+
+    <!-- Suggestion Form Popup -->
+    <div id="suggestionPopup" class="popup justify-content-center mtext-center">
+      <div class="popup-content rounded-5">
+        <span id="closePopup" class="close fs-3">&times;</span>
+        <div class="popup-body d-flex">
+          <div class="popup-image col-sm-6">
+            <img src="./Images/vegeterian/assortment-indian-dishes-platter.jpg" alt="Delicious Dish">
+          </div>
+          <div class="popup-form py-2 col-sm-6 px-4 py-5 text-start">
+            <h2 class="mb-4 formTitle ">Suggestion Form</h2>
+            <form id="suggestionForm">
+              <label class="py-1"> Suggest the dish you like:</label>
+              <input type="text" class="form-control rounded-2 py-1 px-4" id="dish" required><br>
+              <label class="py-1">Your Name :</label>
+              <input type="text" class="form-control rounded-2 py-1 px-4" id="name" required><br>
+              <label class="py-1">Email :</label>
+              <input type="email" class="form-control rounded-2 py-1 px-4" id="email" required><br>
+              <label class="py-1">Comment :</label>
+              <textarea id="comment" class="form-control rounded-2 py-1 px-4" required></textarea><br>
+              <button type="submit" id="submit" class="btn py-1 px-3 text-white w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="home-toast" role="status" aria-live="polite"></div>
+
+
+<script src="Layout/partial.js"></script>
+
+<script src="home.js"></script>
+
+
+</body>
+
+</html>

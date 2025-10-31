@@ -1,0 +1,58 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}h1,
+h2,
+h3,
+h4,
+.aboutBlog {
+  font-family: "Playwrite AU QLD", serif !important;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+/* Hero Section */
+.blog-hero {
+    background: url(./Images/Simple\ Nuts\ Food\ Background\,\ Wallpaper\,\ Simple\,\ Nut\ Background\ Image\ And\ Wallpaper\ for\ Free\ Download.jpeg) center / cover no-repeat;
+    height: 50vh;
+    color: #ffffff;
+    position: relative;
+    margin-top: 100px;
+z-index: 0;
+}
+.blog-content{
+    background-color: rgba(0, 0, 0, 0.237);
+}
+.blog-hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+.blog-section {
+  background-color: rgb(250, 250, 250);
+}
+.blogHeading {
+  color: rgb(239, 122, 49) !important;
+  font-family: "Playwrite AU QLD", serif;
+}
+.blog-para {
+  line-height: 1.8;
+  font-family: "Playwrite AU QLD", serif;
+}
+.blog-section {
+  background: #fff5f2;
+}
+.blogImage {
+  width: 150px;
+  height: 130px;
+  object-fit: cover;
+}
+.read {
+  color: #ff7043;
+  cursor: pointer;
+}
+.read:hover {
+  text-decoration: underline;
+}

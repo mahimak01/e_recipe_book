@@ -1,0 +1,104 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+#menuItem a {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+#menuItem a::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff6f61, #ffcc70);
+  box-shadow: 0 0 10px rgba(255, 184, 97, 0.8);
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+#menuItem a.active::after {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+.aboutBlog {
+  font-family: "Playwrite AU QLD", serif !important;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about-hero {
+  background: url(./Images/Gourmet\ Star\ Anise\ Food\ Yellow\ Fresh\ Banner\ Background\,\ Food\,\ Star\ Anise\,\ Leaf\ Background\ Image\ And\ Wallpaper\ for\ Free\ Download.jpeg) center / cover no-repeat;
+  height: 50vh;
+  color: #ffffff;
+  position: relative;
+  margin-top: 75px;
+  z-index: 0;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.237);
+
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.about-section {
+  background-color: rgb(250, 250, 250);
+}
+
+.aboutHeading {
+  color: rgb(239, 122, 49) !important;
+  font-family: "Playwrite AU QLD", serif;
+}
+
+.blog-para {
+  line-height: 1.8;
+  font-family: "Playwrite AU QLD", serif;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.aboutImage {
+  height: 80%;
+  width: 100%;
+}
+
+.information {
+  height: 50%;
+}
+
+.team {
+  background-color: #fbd6c2;
+}
+
+.team-card {
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}

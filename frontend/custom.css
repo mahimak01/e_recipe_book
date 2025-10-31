@@ -1,0 +1,166 @@
+  body.registerPage {
+    background-image: url(/Images/top-view-recipe-book-still-life-concept.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .form-signin {
+    margin: auto;
+    width: 30%;
+  background: linear-gradient(to bottom, #d67b5d, #534c46);
+    margin-top: 100px;
+  }
+
+.glow-on-hover {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: 	#000000 !important;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+   left: 30%;
+}
+::placeholder{
+  color: 	#888888;
+}
+.inputText{
+  color: 	#333333;
+  background-color: #fefefe;
+}
+.labelText{
+  color: #f8f8f8;
+}
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #d16060, #e4a26c, #bfbd64, #8aba78, #81c9bd, #7d87bb, #a985cf, #c377b2, #c98080);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+  .textBox {
+    padding: 0px 30px;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 54px;
+    top: 59px;
+    cursor: pointer;
+  }
+
+  .loaderPage {
+    background-image: url(/Images/loaderImage2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .loaderTitle {
+    font-size: 70px;
+    padding: 220px 0px 272.9px 0px;
+    font-family: fantasy;
+  }
+
+  .loaderIcon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    right: 12px;
+    bottom: 8px;
+  }
+
+  .pulsing-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ef9a4a;
+    border-radius: 50%;
+    animation: pulse 2.5s infinite;
+    position: absolute;
+    z-index: 1;
+    left: 46%;
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+  }
+
+  .fade-out {
+    opacity: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .loaderPage {
+      background-image: url(/Images/loaderImage2.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .loaderTitle {
+      font-size: 50px !important;
+      padding: 230px 0px;
+    }
+
+    .loaderIcon {
+      right: 8px;
+      bottom: 2px;
+    }
+
+    .pulsing-circle {
+      left: 35%;
+    }
+
+    .form-signin {
+      width: 100%;
+    }
+
+   .glow-on-hover {
+      margin-left: -25px;
+    }
+
+    .registerPage {
+      margin: 80px 50px;
+    }
+
+  }

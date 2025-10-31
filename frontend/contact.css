@@ -1,0 +1,82 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.contact-hero {
+  background: linear-gradient(135deg, #00f260, #0575e6);
+  height: 40vh;
+  color: #ffffff;
+  position: relative;
+  margin-top: 100px;
+  z-index: 0;
+}
+
+.contact-content {
+  background-color: rgba(0, 0, 0, 0.237);
+
+}
+h4 ,h1{
+    font-family: "Playwrite AU QLD", serif !important;
+}
+.heading {
+  color: rgb(23, 173, 168);
+  font-family: "Playwrite AU QLD", serif !important;
+}
+
+.btn-send {
+  background: linear-gradient(135deg, #00f260, #0575e6);
+}
+
+.main {
+  background-color: rgb(250, 250, 250);
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background: linear-gradient(90deg, #ff7a3b, #ff4260);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 14px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 15px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+  font-family: "Playwrite AU QLD", cursive;
+}
+
+.animate-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.categorySection {
+  display: none;
+}
+.categorySection.active {
+  display: block;
+}

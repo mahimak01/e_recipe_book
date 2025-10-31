@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Layout/common.css" />
+
+</head>
+
+<body>
+  <div class="navbar py-4" id="navbar">
+    <nav class="container d-flex justify-content-between">
+      <div class="d-flex">
+        <img src="./Images/ChatGPT Image Aug 6, 2025, 03_19_38 PM.png" class="pt-1" alt="logo"
+          style="width:95px;position:relative;left:15px;bottom:35px;" />
+        <div class="pb-3">
+          <h4 class="fw-bold text-white m-0">E-Recipe Book</h4>
+          <p class="text-white m-0" style="font-size:15px;">Cook. Share. Enjoy.</p>
+        </div>
+      </div>
+
+      <ul class="d-flex justify-content-end" id="menuItem">
+        <li class="mx-3 text-white navName"><a href="homePage.html"><i
+              class="icon fa fa-home px-1"></i><span>Home</span></a></li>
+        <li class="mx-3 text-white navName"><a href="category.html"><i
+              class="icon fa fa-utensils px-1"></i><span>Recipes</span></a></li>
+        <li class="mx-3 text-white navName"><a href="favorites.html"><i
+              class="icon fa fa-heart px-1"></i><span>Favorites</span></a></li>
+        <li class="mx-3 text-white navName"><a href="blog.html"><i
+              class="icon fa fa-blog px-1"></i><span>Blog</span></a></li>
+        <li class="mx-3 text-white navName"><a href="about.html"><i class="icon fa fa-info-circle px-1"></i><span>About
+              us</span></a></li>
+        <li class="mx-3 text-white navName"><a href="contact.html"><i class="icon fa fa-envelope px-1"></i><span>Contact
+              us</span></a></li>
+        <li class="mx-3 text-white navName" id="add-recipe">
+          <a id="addRecipeBtn"><i class="icon fa fa-plus-circle px-1"></i><span>Add Recipe</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3 z-9"></div>
+
+  <!-- ======== AUTH POPUP (Login/Signup) ======== -->
+  <div id="authPopup" class="auth-popup d-none ">
+    <span class="close" id="closeAuthPopup">&times;</span>
+    <div class=" login-container" id="loginContainer">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" id="signInForm">
+            <h2 class="title">Sign In</h2>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" id="sign-in-email" required />
+            </div>
+            <small class="error-message"></small>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="sign-in-password" required />
+              <i class="fas fa-eye-slash" id="toggle-password"></i>
+            </div>
+            <small class="error-message"></small>
+
+            <input type="submit" value="Login" class="btn solid" />
+            <a href="#" class="forgot-password-link pt-3">Forgot password?</a>
+          </form>
+
+          <form action="#" class="sign-up-form" id="signUpForm">
+            <h2 class="title">Sign Up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id="sign-up-username" required />
+            </div>
+            <small class="error-message"></small>
+
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" id="sign-up-email" required />
+            </div>
+            <small class="error-message"></small>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="sign-up-password" required />
+              <i class="fas fa-eye-slash" id="toggle-password-signup"></i>
+            </div>
+            <small class="error-message"></small>
+
+            <input type="submit" value="Sign Up" class="btn solid" />
+          </form>
+
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here?</h3>
+            <p>Become a member to access exclusive recipes, create meal plans, and join our community of food lovers.
+            </p><button class="btn transparent" id="sign-up-btn">Sign Up</button>
+          </div>
+
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us?</h3>
+            <p>Your culinary journey continues here. Sign in to get started.</p><button class="btn transparent"
+              id="sign-in-btn">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== FORGOT PASSWORD POPUP ======== -->
+  <div id="forgotPasswordPopup" class="auth-popup d-none">
+    <span class="close" id="closeForgotPasswordPopup">&times;</span>
+    <div class="forgot-password-container">
+      <form id="forgotPasswordForm" class="forgot-password-form">
+        <h2 class="title">Reset Password</h2>
+        <p>Enter your email to receive a password reset link.</p>
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" id="reset-email" required />
+        </div>
+        <small class="error-message "></small>
+
+        <div class="d-flex justify-content-center align-items-center gap-3 mt-2">
+          <button type="submit" class="btn btn-secondary  justify-content-center">Send Reset Link</button>
+        </div>
+        <a href="#" id="back-to-signin" class=" back-to-signin text-decoration-none text-center left-15">
+          Back to Sign In
+        </a>
+      </form>
+    </div>
+  </div><!-- Reset Password Popup -->
+  <div id="resetPasswordPopup" class="auth-popup d-none">
+    <div class="forgot-password-container" style="max-width: 480px;">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <h2 class="title m-0">Reset Password</h2>
+        <button type="button" class="btn-close" id="rp-close" aria-label="Close"></button>
+      </div>
+
+      <form id="rp-form" novalidate>
+        <div class="mb-3">
+          <label class="form-label">New Password</label>
+          <input id="rp-pass" type="password" class="form-control" placeholder="Enter new password" required>
+          <small class="error-message"></small>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Confirm Password</label>
+          <input id="rp-confirm" type="password" class="form-control" placeholder="Confirm password" required>
+          <small class="error-message"></small>
+        </div>
+        <div class="d-flex justify-content-end gap-2">
+          <button type="button" id="rp-cancel" class="btn btn-outline-secondary">Cancel</button>
+          <button type="submit" id="rp-submit" class="btn btn-primary">Update Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Recipes Detail Popup -->
+  <div id="recipeDetailPopup" class="auth-popup d-none">
+    <div class="forgot-password-container rd-form-shell rounded-3">
+      <div class="rd-form-header">
+        <h2 class="rd-heading">Recipe Details</h2>
+        <button type="button" class="btn-close" id="rd-close-icon" aria-label="Close"></button>
+      </div>
+      <div class="rd-form-body">
+        <form id="rd-form" novalidate>
+          <div class="mb-3">
+            <label class="form-label rd-subtitle">Recipe Title</label>
+            <input type="text" id="rd-title" class="form-control" placeholder="e.g., Grilled Chicken" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label rd-subtitle">Category</label>
+              <select id="rd-category" class="form-control" required>
+                <option value="">Select category</option>
+              </select>
+              <input type="hidden" id="rd-role" value="user">
+
+              <small class="error-message"></small>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label rd-subtitle">Cooking Time</label>
+              <input type="text" id="rd-time" class="form-control" placeholder="00:35" required>
+              <small class="error-message"></small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label rd-subtitle">Your Email</label>
+              <input type="email" id="rd-email" class="form-control" placeholder="you@example.com" readonly>
+              <small class="text-muted">Auto-filled from your account; used for admin replies.</small>
+              <small class="error-message"></small>
+            </div>
+
+          </div>
+
+          <div class="mb-3 mt-2">
+            <label class="form-label rd-subtitle">Banner Image URL</label>
+            <input type="url" id="rd-banner" class="form-control" placeholder="https://.../banner.jpg" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label rd-subtitle">Card Image URL</label>
+            <input type="url" id="rd-card" class="form-control" placeholder="https://.../card.jpg" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label rd-subtitle">Requirements (one per line)</label>
+            <textarea id="rd-req" class="form-control" rows="3"
+              placeholder="Non-stick pan&#10;Spatula&#10;Measuring cups"></textarea>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label rd-subtitle">Ingredients (one per line)</label>
+            <textarea id="rd-ing" class="form-control" rows="4"
+              placeholder="250 g chicken&#10;1 tbsp olive oil&#10;1 onion, chopped&#10;2 cloves garlic, minced"
+              required></textarea>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label rd-subtitle">Steps (one per line)</label>
+            <textarea id="rd-steps" class="form-control" rows="5"
+              placeholder="Marinate chicken&#10;Sauté onion and garlic&#10;Cook chicken until done&#10;Season and serve"
+              required></textarea>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label rd-subtitle">Notes (optional)</label>
+            <textarea id="rd-notes" class="form-control" rows="3" placeholder="Optional notes..."></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="rd-form-footer">
+        <button type="submit" form="rd-form" id="rd-submit" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+    <script src="Layout/partial.js"></script>
+</body>
+
+</html>

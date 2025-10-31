@@ -1,0 +1,141 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+.aboutBlog {
+  font-family: "Playwrite AU QLD", serif !important;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+.btn-modern {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform .28s ease, box-shadow .28s ease;
+  color: #fff;
+}
+
+.btn-modern:active {
+  transform: scale(.99);
+}
+
+.btn-diagonal-wipe {
+  background: linear-gradient(90deg, #ff7a3b, #ff4260);
+}
+
+.btn-diagonal-wipe::before {
+  content: "";
+  position: absolute;
+  width: 180%;
+  height: 220%;
+  left: -140%;
+  top: -20%;
+  background: rgba(255, 255, 255, 0.249);
+  transform: rotate(20deg);
+  transition: left .45s cubic-bezier(.2, .9, .2, 1);
+  z-index: 0;
+}
+
+.btn-diagonal-wipe span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-diagonal-wipe:hover::before {
+  left: -20%;
+}
+
+.btn-glow-outline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.215) !important;
+  color: #fff;
+}
+
+.btn-glow-outline:hover {
+  box-shadow: 0 8px 28px rgba(32, 201, 151, 0.18), 0 2px 8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.btn-glow {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 10px 30px rgba(255, 75, 75, 0.18);
+  transform: translateY(-5px);
+}
+
+img {
+  object-fit: cover;
+}
+
+.recipe-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+
+.recipe-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.719), rgba(239, 242, 243, 0));
+}
+
+.recipe-card:hover img {
+  transform: scale(1.05);
+}
+
+.favoritRecipe {
+  background-color: #f5f2e2;
+  color: rgb(23, 173, 168);
+  margin-top: 100px;
+}
+
+.aboutBlog {
+  background-color: rgb(250, 250, 250);
+
+}
+
+.aboutHeading,
+.blogHeading {
+  color: rgb(239, 122, 49) !important;
+}
+
+.blogImage {
+  width: 200px;
+  height: 200px;
+}
+
+.read:hover {
+  text-decoration: underline;
+  color: rgb(47, 193, 188);
+}
+
+.blog-para {
+  line-height: 2;
+}
+

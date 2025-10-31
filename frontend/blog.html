@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blog Page</title>
+  <link rel="stylesheet" href="blog.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <div>
+     <!--navbar-->
+      <div id="include-header"></div>
+    <!-- Hero Section -->
+    <section class="blog-hero d-flex align-items-center justify-content-center text-center">
+      <div class="blog-content px-5 py-2 rounded-3">
+        <h1 class="fw-bold py-2">Blog</h1>
+        <p>Weekly Cooking Tips & Recipes .</p>
+      </div>
+    </section>
+    <!-- About Content -->
+    <section class=" blog-section py-5  ">
+      <div class="blog fw-bold px-5" id="blog">
+        <h1 class="blogHeading py-3 pb-4 text-center">
+          latest from the blogs
+        </h1>
+        <div class="d-flex container">
+          <div class="d-flex justify-content-end  my-3" id="blogOne">
+            <div>
+              <img src="./Images/vegeterian/spagetti.jpg" class="blogImage rounded-5">
+            </div>
+            <div class="px-2">
+              <p class="fw-light fs-6"> July 31, 2025</p>
+              <p class="fs-5"> Instant Pot Spaghetti </p>
+              <p class=" fw-light"> My whole family loves this Instant Pot Spaghetti! Silky, flavorful, a
+                delightfully clingy. Easy enough for my kids to make it too!</p>
+              <h6 class="read fw-semibold continue-btn" id="blogRead1"> Continue Reading </h6>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end my-2" id="blogTwo">
+            <div>
+              <img src="./Images/juice/smootheie.webp" class="blogImage rounded-5">
+            </div>
+            <div class="px-2">
+              <p class=" fw-light fs-6"> July 23, 2025</p>
+              <p class="fs-5">Chocolate Cherry Smoothie</p>
+              <p class=" fw-light">Chocolate Cherry Smoothie every day, please! Packed with protein and so
+                delightfully silky and smooth.</p>
+              <h6 class="read fw-semibold continue-btn" id="blogRead2"> Continue Reading </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+   <div id="include-footer"></div>
+<script src="Layout/partial.js"></script>
+    <script src="blog.js"></script>
+</body>
+
+</html>

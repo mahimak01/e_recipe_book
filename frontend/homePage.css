@@ -1,0 +1,542 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.search{
+      display: block;
+    position: relative !important;
+    left: 34%!important;
+}
+h1,
+h2,
+h3,
+h4,
+.options,
+.view-most-love,
+.view-best-collection,
+.aboutBlog {
+  font-family: "Playwrite AU QLD", serif !important;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+  margin-top: 80px;
+  min-height: 64vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+
+}
+
+.hero-slideshow .slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity .9s ease, transform 1s ease;
+}
+
+.hero-slideshow .slide.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  color: #fff;
+  padding: 36px;
+  max-width: 950px;
+  background-color: rgba(18, 14, 14, 0.222);
+  backdrop-filter: blur(6px);
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  margin-bottom: .35rem;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.hero-sub {
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.btn-modern {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform .28s ease, box-shadow .28s ease;
+  color: #fff;
+}
+
+.btn-modern:active {
+  transform: scale(.99);
+}
+
+.btn-diagonal-wipe {
+  background: linear-gradient(90deg, #ff7a3b, #ff4260);
+}
+
+.btn-diagonal-wipe::before {
+  content: "";
+  position: absolute;
+  width: 180%;
+  height: 220%;
+  left: -140%;
+  top: -20%;
+  background: rgba(255, 255, 255, 0.249);
+  transform: rotate(20deg);
+  transition: left .45s cubic-bezier(.2, .9, .2, 1);
+  z-index: 0;
+}
+
+.btn-diagonal-wipe span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-diagonal-wipe:hover::before {
+  left: -20%;
+}
+
+.btn-glow-outline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.215) !important;
+  color: #fff;
+}
+
+.btn-glow-outline:hover {
+  box-shadow: 0 8px 28px rgba(32, 201, 151, 0.18), 0 2px 8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.btn-glow {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 10px 30px rgba(255, 75, 75, 0.18);
+  transform: translateY(-5px);
+}
+
+img {
+  object-fit: cover;
+}
+
+.options {
+  position: relative;
+  background: linear-gradient(135deg, #65acf2, #9df3bf);
+  color: #fff;
+}
+
+.menuOption {
+  width: 150px;
+}
+
+.image-grid {
+  padding: 12px;
+}
+
+.image-row {
+  display: flex;
+}
+
+.image-row .image {
+  margin: 12px;
+  height: 240px;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+    0 6px 20px rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.image-01 {
+  background-image: url("/Images/vegeterian/233b2a6f-21f8-4a7d-aa95-3eeb7ff543ac.jpeg");
+  flex: 1;
+  transition: transform .2s;
+}
+
+.image-02 {
+  background-image: url("/Images/vegeterian/4d90bf6d-6c1c-4848-ac9b-ca73fa63d872.jpeg");
+  flex: 1;
+  transition: transform .2s;
+}
+
+.image-03 {
+  background-image: url("/Images/healthy/Broccoli\ and\ Mushroom\ Stir\ Fry\ -\ Omnivore\'s…\ \(1\).jpeg");
+  flex: 2;
+  transition: transform .2s;
+}
+
+.image-04 {
+  background-image: url("/Images/juice/See\ all\ about\ Green\ Papaya\ Will\ Unlock\ 4\ Powerful….jpeg");
+  flex: 1;
+  transition: transform .2s;
+}
+
+.image-05 {
+  background-image: url("/Images/dessert/Easy\ 3-Ingredient\ Donuts.jpeg");
+  flex: 2;
+  transition: transform .2s;
+}
+
+.image-01:hover,
+.image-02:hover,
+.image-03:hover,
+.image-04:hover,
+.image-05:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 400px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row .image {
+    flex-basis: auto;
+  }
+}
+
+.view-most-love {
+  background: linear-gradient(135deg, #00f260, #0575e6);
+  color: #fff;
+  font-family: "Playwrite AU QLD", serif !important;
+}
+
+.mostLoveHeading,
+.aboutHeading,
+.blogHeading {
+  color: rgb(23, 173, 168);
+  font-family: "Playwrite AU QLD", serif !important;
+}
+
+.bestCollectionHeading {
+  color: rgb(239, 122, 49) !important;
+  font-family: "Playwrite AU QLD", serif !important;
+}
+
+.mostLove {
+  background-color: #f5f2e2;
+}
+
+.best {
+  background-color: rgb(250, 250, 250);
+}
+
+.view-best-collection {
+  background: linear-gradient(90deg, #ff7a3b, #ff4260);
+  font-family: "Playwrite AU QLD", serif !important;
+}
+
+.best .image-01 {
+  background-image: url("/Images/vegeterian/233b2a6f-21f8-4a7d-aa95-3eeb7ff543ac.jpeg");
+  flex: 1;
+  transition: transform .2s;
+}
+
+.best .image-02 {
+  background-image: url("/Images/non-vegetarian/2a48bac6-7ea9-46df-aca6-a69cf32877ab.jpeg");
+  flex: 1;
+  transition: transform .2s;
+}
+
+.best .image-03 {
+  background-image: url("/Images/vegeterian/4d90bf6d-6c1c-4848-ac9b-ca73fa63d872.jpeg");
+  flex: 2;
+  transition: transform .2s;
+}
+
+.best .image-04 {
+  background-image: url("/Images/healthy/Simple\,\ fresh\ &\ delicious!\ 🍅🥑\ Whip\ up\ this….jpeg");
+  flex: 1;
+  transition: transform .2s;
+}
+
+.best .image-05 {
+  background-image: url("/Images/dessert/249487be-169c-4689-8ec7-449b1b708114.jpeg");
+  flex: 2;
+  transition: transform .2s;
+}
+
+.aboutBlog {
+  background-color: #f5f2e2;
+}
+
+.blogImage {
+  width: 200px;
+  height: 200px;
+}
+
+.read:hover {
+  text-decoration: underline;
+  color: rgb(47, 193, 188);
+}
+
+.blog-para {
+  line-height: 2;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9000;
+  cursor: text;
+
+}
+
+.popup-content {
+  background-color: rgb(255, 255, 255);
+  width: 700px;
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 0.5s;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.popup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+.popup-form {
+  background: linear-gradient(90deg, #ff793b39, #ff426236);
+  cursor: text;
+}
+
+.formTitle {
+  color: #d35400;
+}
+
+label {
+  color: #2c3e50;
+  font-family: "Playwrite AU QLD", cursive;
+}
+
+.popup-form button {
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+
+}
+
+.popup-form button:hover {
+  background: linear-gradient(90deg, #219150, #27ae60);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background: linear-gradient(90deg, #ff7a3b, #ff4260);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 14px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 15px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+  font-family: "Playwrite AU QLD", cursive;
+}
+
+#menuItem a {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+#menuItem a::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(244, 204, 44);
+  transition: width 0.3s ease;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ff6f61, #ffcc70);
+  box-shadow: 0 0 10px rgba(255, 184, 97, 0.8);
+}
+
+#menuItem a:hover::after {
+  width: 100%;
+}
+
+#menuItem a.active::after {
+  width: 100%;
+}
+
+.autocomplete {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete li {
+  cursor: pointer;
+}
+
+.autocomplete li:hover {
+  background-color: #f0f0f0;
+}
+
+#floatingBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 0.4s ease, border-radius 0.4s ease, box-shadow 0.3s ease;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00f260, #0575e6);
+  padding: 0;
+  animation: floatGlow 3s ease-in-out infinite;
+}
+
+#floatingBtn .icon {
+  font-size: 24px;
+  transition: transform 0.6s ease;
+}
+
+#floatingBtn .btn-text {
+  max-width: 0;
+  opacity: 0;
+  white-space: nowrap;
+  padding-left: 0;
+  transition: max-width 0.4s ease, opacity 0.3s ease, padding-left 0.4s ease;
+  font-size: 16px;
+}
+#floatingBtn:hover {
+  width: 200px;
+  border-radius: 35px;
+  animation: none;
+  box-shadow: 0 0 15px #ffcc70, 0 0 30px #ffcc70, 0 0 50px #ffcc70;
+}
+
+#floatingBtn:hover .btn-text {
+  max-width: 120px;
+  opacity: 1;
+  padding-left: 10px;
+}
+
+#floatingBtn:hover .icon {
+  transform: rotate(360deg);
+}
+
+@keyframes floatGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px #ff6f61, 0 0 15px #ff6f61, 0 0 25px #ff4260;
+    transform: translateY(0);
+  }
+
+  50% {
+    box-shadow: 0 0 12px #ffcc70, 0 0 20px #ffcc70, 0 0 35px #ffcc70;
+    transform: translateY(-8px);
+  }
+}
+
+#searchInput { display: none; }
+
+#home-toast {
+  position: fixed;
+  top: 16px;
+  left: 80%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  z-index: 2147483647; 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+#home-toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All recipe Page</title>
+    <link rel="stylesheet" href="category.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <!--navbar-->
+      <div id="include-header"></div>
+        <!--Menu options-->
+        <div class="options py-4">
+            <div class="container d-flex justify-content-between">
+                <div class="categoryButton active" data-category="vegetarian">
+                    <img src="./Images/gif/salad.gif" alt="veg" class="rounded-circle menuOption"><br>
+                    <span class="px-4 fw-semibold text-white fs-5 categoryName">Vegetarian</span>
+                </div>
+                <div class=" categoryButton" data-category="non-veg">
+                    <img src="./Images/gif/dinner.gif" alt="non-veg" class="rounded-circle menuOption  ms-4"><br>
+                    <span class="px-3 fw-semibold text-white fs-5 categoryName">Non-Vegetarian</span>
+                </div>
+                <div class="categoryButton " data-category="healthy">
+                    <img src="./Images/gif/healthy-meal.gif" alt="healty" class="rounded-circle menuOption ms-4"><br>
+                    <span class="px-5 mx-1 fw-semibold text-white fs-5 categoryName">Healthy</span>
+                </div>
+                <div class="categoryButton " data-category="juices">
+                    <img src="./Images/gif/cold-drink.gif" alt="drinks" class="rounded-circle menuOption ms-3"><br>
+                    <span class="px-5 mx-2 fw-semibold text-white fs-5 categoryName">Juices</span>
+                </div>
+                <div class="categoryButton " data-category="dessert">
+                    <img src="./Images/gif/pancake.gif" alt="sweet" class="rounded-circle menuOption ms-3 "><br>
+                    <span class="px-5  fw-semibold text-white fs-5 categoryName">Dessert</span>
+                </div>
+            </div>
+
+        </div>
+        <!--category recipe -->
+        <div class="category py-5 " id="recipeGrid">
+            <!--default veg -->
+            <div class="container categorySection categoryBtn" data-category="vegetarian">
+                <h1 class="text-center pb-5">Vegetarian
+                    Recipe
+                </h1>
+                <div class=" row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/vegeterian/233b2a6f-21f8-4a7d-aa95-3eeb7ff543ac.jpeg" alt="biryani">
+
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    veg pullao
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/vegeterian/346cb62b-acae-4cdf-86c1-dd79df4c0e92.jpeg" alt="pakoda">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    onoin pakoda
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/vegeterian/Celebrate World Food Day with a vibrant South….jpeg">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    southIndian Doasa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/vegeterian/Kanda Poha recipe is a popular maharashtrian snack….jpeg"
+                                alt="pohe">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    kande Pohe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/vegeterian/Indian Green Beans Aloo Sabzi - Sinfully Spicy.jpeg"
+                                alt="aloo abji">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 45 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    aloo-Beans Subji
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- non-veg -->
+            <div class="container categorySection categoryBtn " data-category="non-veg" style="display:none;">
+                <h1 class="text-center pb-5">Non-Vegetarian Recipe</h1>
+                <div class=" row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/non-vegetarian/210792fb-f7fd-4f4f-9760-ab6d946afee2.jpeg" alt="biryani">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    veg pullao
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/non-vegetarian/2a48bac6-7ea9-46df-aca6-a69cf32877ab.jpeg" alt="pakoda">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    onoin pakoda
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/non-vegetarian/32ae7a5e-3ea5-4ca2-993f-e3c8984f03ce.jpeg">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    southIndian Doasa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/non-vegetarian/5ff28287-bdc2-43ca-9da4-478c484eb9ea.jpeg" alt="pohe">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    kande Pohe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/non-vegetarian/Andhra Fish Fry Recipe _ Andhra Chepa Vepudu….jpeg"
+                                alt="aloo abji">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 45 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    aloo-Beans Subji
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--healty -->
+            <div class="container categorySection categoryBtn" data-category="healthy" style="display:none;">
+                <h1 class="text-center pb-5">Healthy Recipe </h1>
+                <div class=" row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/healthy/0fd9b842-e53d-4b08-bb75-03d088971f5f.jpeg" alt="biryani">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    veg pullao
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/healthy/Broccoli and Mushroom Stir Fry - Omnivore's… (1).jpeg"
+                                alt="pakoda"> <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    onoin pakoda
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/healthy/ca0d8dd6-176b-41c5-9938-2b76dd707ace.jpeg">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    southIndian Doasa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/healthy/Easiest and Quickest Salad you can make….jpeg" alt="pohe">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    kande Pohe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/healthy/f105abfb-210a-436b-988b-dab0bf977fd5.jpeg" alt="aloo abji">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 45 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    aloo-Beans Subji
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--juices -->
+            <div class="container categorySection categoryBtn " data-category="juices" style="display:none;">
+                <h1 class="text-center pb-5">Juices Recipe </h1>
+                <div class=" row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/juice/Amla juice is a tangy and healthy drink made from….jpeg"
+                                alt="biryani">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    veg pullao
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/juice/Blog post at Upstate Ramblings _ I love smoothies….jpeg"
+                                alt="pakoda">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    onoin pakoda
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/juice/four-different-cocktail-smoothies-with-milky-cream-top.jpg">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    southIndian Doasa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/juice/Ingredients_ - Orange juice 🍊 - Grapefruit juice….jpeg" alt="pohe">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    kande Pohe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/juice/See all about Green Papaya Will Unlock 4 Powerful….jpeg"
+                                alt="aloo abji">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 45 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    aloo-Beans Subji
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Desserts -->
+            <div class="container categorySection categoryBtn" data-category="dessert" style="display:none;">
+                <h1 class="text-center pb-5">desserts Recipe</h1>
+                <div class=" row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images//dessert/249487be-169c-4689-8ec7-449b1b708114.jpeg" alt="biryani">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    veg pullao
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/dessert/bundle-cakes-marmalades-wooden-platter-abstract-table.jpg"
+                                alt="pakoda"> <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    onoin pakoda
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/dessert/Enjoy the traditional Indian dessert with a….jpeg">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i>
+                            </div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 1 hours 00 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    southIndian Doasa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/dessert/Photo rasmalai popular indian sweet made….jpeg" alt="pohe">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 30 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    kande Pohe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-5">
+                        <div class="recipe-card position-relative rounded-3 ">
+                            <img src="./Images/dessert/from-assorted-baked-with-baklava-baklava-sheki-flowers-smoked-fish.jpg"
+                                alt="aloo abji">
+                            <!-- Like Button -->
+                            <button class="like-btn">
+                                <i class="fa fa-heart fs-5 rounded-circle py-1 px-1"></i>
+                            </button>
+                            <div class="play-btn my-3 mx-4 fs-6 text-white rounded-circle"><i
+                                    class="bi bi-play-fill"></i></div>
+                            <div class="recipe-overlay ">
+                                <div class="recipe-time">
+                                    <i class="bi bi-clock fs-6 text-center gap-5 mb-5"></i> 0 hours 45 minutes
+                                </div>
+                                <div class="recipe-title fw-bold lh-1.2 fs-5">
+                                    aloo-Beans Subji
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--About us-->
+        <div class="aboutBlog " id="aboutBlog">
+            <div class="container  py-4 d-flex px-5">
+                <div class="about text-start col-sm-6 px-5 " id="about">
+                    <h1 class="aboutHeading py-3 ">
+                        About All Recipe
+                    </h1>
+                    <p class=" blog-para">In this modern world everyone depends on internet and mobile phones.
+                        Keeping this thing in the
+                        mind
+                        we
+                        designed food recipe android application to assist users to cook like a master. This paper
+                        introduces a food recipe app
+                        designed to help the users in cooking. This food recipe app aims to improve the cooking skills
+                        of
+                        user.
+                        and quick in comparison
+                        to such an application with a locally stored database. In this paper we summarize implementation
+                        details and results of
+                        the system practice. This system is a proper source for beginner and professionals.
+                        Most importantly, we connects home cooks with their greatest sources of inspiration —
+                        other home cooks. We're the world's leading digital food brand, and that inspires us to do
+                        everything possible to keep our community connected. Sixty-million home cooks deserve no less.
+                    </p>
+                    <button class="btn py-2 px-2 mt-5 view-most-love text-white btn-modern btn-diagonal-wipe"
+                        id="aboutBtn">
+                        About Us</button>
+                </div>
+
+
+
+                <div class="blog fw-bold col-sm-6 px-5" id="blog">
+                    <h1 class="blogHeading py-3 pb-4">
+                        latest from the blogs
+                    </h1>
+                    <div class="d-flex justify-content-end my-3" id="blogOne">
+                        <div>
+                            <img src="./Images/vegeterian/spagetti.jpg" class="blogImage rounded-5">
+                        </div>
+                        <div class="px-2">
+                            <p class="fw-light fs-6"> July 31, 2025</p>
+                            <p class="fs-5"> Instant Pot Spaghetti </p>
+                            <p class=" fw-light"> My whole family loves this Instant Pot Spaghetti! Silky, flavorful, a
+                                delightfully clingy. Easy enough for my kids to make it too!</p>
+                            <h6 class="read fw-semibold continue-btn" id="blogRead1"> Continue Reading </h6>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end my-2" id="blogTwo">
+                        <div>
+                            <img src="./Images/juice/smootheie.webp" class="blogImage rounded-5">
+                        </div>
+                        <div class="px-2">
+                            <p class=" fw-light fs-6"> July 23, 2025</p>
+                            <p class="fs-5">Chocolate Cherry Smoothie</p>
+                            <p class=" fw-light">Chocolate Cherry Smoothie every day, please! Packed with protein and so
+                                delightfully silky and smooth.</p>
+                            <h6 class="read fw-semibold continue-btn" id="blogRead2"> Continue Reading </h6>
+                        </div>
+                    </div>
+                    <button class="btn py-2 px-4 mt-5 view-most-love text-white btn-modern btn-diagonal-wipe "
+                        id="moreBtn">More</button>
+                </div>
+            </div>
+
+        </div>
+      <div id="include-footer"></div>
+<script src="Layout/partial.js"></script>
+        <script src="category.js"></script>
+</body>
+
+</html>

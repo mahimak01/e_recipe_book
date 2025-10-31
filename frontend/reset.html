@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="reset.css" />
+ 
+</head>
+<body>
+  <div id="toast-container"></div>
+
+  <div class="form-container forgot-container">
+    <button type="button" class="close-reset" id="rp-close" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <h1>Reset Your Password</h1>
+    <form id="reset-form">
+      <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="New Password" required />
+        <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+      </div>
+      <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="confirmPassword" placeholder="Confirm New Password" required />
+        <i class="fas fa-eye-slash toggle-password" id="toggleConfirmPassword"></i>
+      </div>
+      <button type="submit" class="btn">Reset Password</button>
+    </form>
+  </div>
+
+  <script src="reset.js"></script>
+</body>
+</html>
