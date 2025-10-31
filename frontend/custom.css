@@ -81,7 +81,7 @@
   }
 
   .loaderPage {
-    background-image: url(/Images/loaderImage2.webp);
+    background-image: url(./Images/loaderImage2.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
